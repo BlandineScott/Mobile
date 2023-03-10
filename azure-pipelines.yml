@@ -6,7 +6,7 @@ resources:
     - repository: sourceRepo
       type: github
       name: TestPlant/eggplant-azure-devops
-      endpoint: github.com_foomunleong
+      endpoint: github.com_blandinescott
 jobs:
   - job: Run_Test_Config
     strategy:
