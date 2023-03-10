@@ -1,4 +1,11 @@
 # Starter pipeline
+- task: eggplant-runner@2
+  inputs:
+    daiVersion: '6.4.0-5'
+    serverURL: 'http://5cd151jqn2:8000/designer/models'
+    testConfigID: '7bff1889-a576-4eff-99fd-cefb2059ec8f'
+    clientID: 'dai_admin'
+    clientSecret: 'eggplant1234'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
