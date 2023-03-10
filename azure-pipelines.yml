@@ -1,26 +1,30 @@
-# Starter pipeline
-- task: eggplant-runner@2
-  inputs:
-    daiVersion: '6.4.0-5'
-    serverURL: 'http://5cd151jqn2:8000/designer/models'
-    testConfigID: '7bff1889-a576-4eff-99fd-cefb2059ec8f'
-    clientID: 'dai_admin'
-    clientSecret: 'eggplant1234'
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
-- main
-
-pool:
-  vmImage: ubuntu-latest
-
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+  - main
+        
+resources:
+  repositories:
+    - repository: sourceRepo
+      type: github
+      name: TestPlant/eggplant-azure-devops
+      endpoint: github.com_foomunleong
+jobs:
+  - job: Run_Test_Config
+    strategy:
+      maxParallel: 1
+      matrix:
+        windows:
+          imageName: 'windows-latest'
+      
+    pool: 
+      vmImage: $(imageName)
+    steps:
+      - template: templates/run-test-config.yml@sourceRepo
+        parameters:
+          dryRun: true
+          clientID: client:dai:agent:integration
+          serverURL: http://5cd151jqn2:8000/designer/models
+          testConfigID: 7bff1889-a576-4eff-99fd-cefb2059ec8f
+          # alternatively, one could set a pipeline secret in Azure Pipeline Editor
+          # and refer to it like below.
+          # clientSecret: $(DAI_CLIENT_SECRET)
+          clientSecret: e9c15662-8c1b-472e-930d-aa0b11726093
