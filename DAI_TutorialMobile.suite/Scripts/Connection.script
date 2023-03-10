@@ -1,0 +1,6 @@
+﻿(*SetOption SaveRunLogOutput, true
+setoption ScriptTracing, true*)
+
+if ConnectionInfo() = empty
+	Connect "Tutorial Connection"
+end if

@@ -1,0 +1,44 @@
+{
+	"entries": [
+		{
+				"message": "Running Connection.script",
+				"identifier": "START",
+				"timestamp": "2023-02-16 15:57:52.841 -0600"
+			},
+		{
+				"handlerName": "on_connection",
+				"timestamp": "2023-02-16 15:57:52.891 -0600",
+				"message": "SaveRunLogOutput = True",
+				"scriptName": "Connection.script",
+				"handlerLine": 1,
+				"identifier": "setoption"
+			},
+		{
+				"handlerName": "on_connection",
+				"timestamp": "2023-02-16 15:57:52.896 -0600",
+				"message": "ScriptTracing = True",
+				"scriptName": "Connection.script",
+				"handlerLine": 2,
+				"identifier": "setoption"
+			},
+		{
+				"handlerName": "on_connection",
+				"timestamp": "2023-02-16 15:57:52.950 -0600",
+				"message": "Tutorial Connection:(null)",
+				"scriptName": "Connection.script",
+				"handlerLine": 5,
+				"identifier": "Connect"
+			},
+		{
+				"message": "(Duration:\"0.98\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2023-02-16 15:57:52 -0600\", Successes:\"1\", TestCase:\"Connection.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2023-02-16 15:57:53.828 -0600"
+			},
+		{
+				"message": "Execution Time 0:00:00 Connection.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2023-02-16 15:57:53.894 -0600"
+			}
+	],
+	"createdTimestamp": "2023-02-16 15:57:52.846 -0600"
+}

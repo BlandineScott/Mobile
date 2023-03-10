@@ -1,0 +1,5 @@
+﻿Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2023-01-20 15:15:15.339 -0600,"Success",0:00:00,0,0,0,"20230120_151515.339/LogFile.txt","","",1
+2023-01-20 15:15:30.927 -0600,"Success",0:00:00,0,0,0,"20230120_151530.927/LogFile.txt","","",1
+2023-02-16 15:44:05.207 -0600,"Success",0:00:15,0,0,0,"20230216_154405.207/LogFile.txt","","",1
+2023-02-16 15:57:52.836 -0600,"Success",0:00:00,0,0,0,"20230216_155752.836/LogFile.txt","","",1

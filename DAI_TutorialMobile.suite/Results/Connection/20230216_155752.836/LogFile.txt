@@ -1,0 +1,6 @@
+﻿2023-02-16 15:57:52.841 -0600	START		Running Connection.script
+2023-02-16 15:57:52.891 -0600	setoption		SaveRunLogOutput = True	1	on_connection	Connection.script
+2023-02-16 15:57:52.896 -0600	setoption		ScriptTracing = True	2	on_connection	Connection.script
+2023-02-16 15:57:52.950 -0600	Connect		Tutorial Connection:(null)	5	on_connection	Connection.script
+2023-02-16 15:57:53.828 -0600	EndTestCase		(Duration:"0.98", Errors:"0", Exceptions:"0", StartTime:"2023-02-16 15:57:52 -0600", Successes:"1", TestCase:"Connection.script", Warnings:"0")
+2023-02-16 15:57:53.894 -0600	SUCCESS		Execution Time 0:00:00 Connection.script

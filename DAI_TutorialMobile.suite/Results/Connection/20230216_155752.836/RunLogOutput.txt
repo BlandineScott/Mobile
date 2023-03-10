@@ -1,0 +1,10 @@
+2/16/23, 3:57:52 PM	START		Running Connection.script
+2/16/23, 3:57:52 PM	setoption		SaveRunLogOutput = True
+2/16/23, 3:57:52 PM	setoption		ScriptTracing = True
+if ConnectionInfo() = empty
+	Connect "Tutorial Connection"
+2/16/23, 3:57:52 PM	Connect		Tutorial Connection:(null)
+end if
+<<< 03:57:52 End handler 1: connection (normal exit)
+2/16/23, 3:57:53 PM	EndTestCase		(Duration:"0.98", Errors:"0", Exceptions:"0", StartTime:"2023-02-16 15:57:52 -0600", Successes:"1", TestCase:"Connection.script", Warnings:"0")
+2/16/23, 3:57:53 PM	SUCCESS		Execution Time 0:00:00 Connection.script
